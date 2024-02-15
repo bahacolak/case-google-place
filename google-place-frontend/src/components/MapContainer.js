@@ -25,7 +25,7 @@ const MapContainer = ({ places }) => {
   return (
     <div style={{ height: '100vh', width: '100%' }}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyBe-HZcT6yMniwEcvJ_ij9HqfcWgkwMhBE" }}
+        bootstrapURLKeys={{ key: "my_api_key" }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
         onGoogleApiLoaded={({ map, maps }) => renderMarkers(map, maps)}

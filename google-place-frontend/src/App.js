@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PlaceForm from './components/PlacesForm';
+import PlaceForm from './components/PlaceForm';
 import MapContainer from './components/MapContainer';
 
 function App() {
