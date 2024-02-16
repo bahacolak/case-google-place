@@ -1,5 +1,6 @@
 package com.bahadircolak.googleplacebackend.service;
 
+import com.bahadircolak.googleplacebackend.config.GooglePlacesApiConfiguration;
 import com.bahadircolak.googleplacebackend.web.dto.GooglePlaceResult;
 import com.bahadircolak.googleplacebackend.web.response.GooglePlacesApiResponse;
 import lombok.RequiredArgsConstructor;

@@ -1,5 +1,6 @@
 package com.bahadircolak.googleplacebackend.web;
 
+import com.bahadircolak.googleplacebackend.service.PlaceService;
 import com.bahadircolak.googleplacebackend.web.response.PlacesResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
