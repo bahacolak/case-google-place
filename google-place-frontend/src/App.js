@@ -8,8 +8,8 @@ function App() {
   const handleSubmit = ({ latitude, longitude, radius }) => {
     fetch(`http://localhost:8070/places?latitude=${latitude}&longitude=${longitude}&radius=${radius}`)
       .then((response) => response.json())
-      .then((data) => setPlaces(data))
-      .catch((error) => console.error('Error:', error));
+      .then((data) => setPlaces(data.places)
+      .catch((error) => console.error('Error:', error)))
   };
 
   return (
