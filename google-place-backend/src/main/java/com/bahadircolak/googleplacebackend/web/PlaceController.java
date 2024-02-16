@@ -4,6 +4,7 @@ import com.bahadircolak.googleplacebackend.service.PlaceService;
 import com.bahadircolak.googleplacebackend.web.response.PlacesResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,6 +20,7 @@ public class PlaceController {
         this.placeService = placeService;
     }
 
+    @CrossOrigin
     @GetMapping("/places")
     public PlacesResponse getNearbyPlaces(@RequestParam double longitude,
                                           @RequestParam double latitude,
